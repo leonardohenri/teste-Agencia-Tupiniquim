@@ -331,9 +331,9 @@ video {
 }
 /* resete de css do tailwind */
 :root{
-    --cor-blue: rgba(66, 237, 241);
-    --cor-purple: rgba(37, 6, 114);
-    --cor-gray: rgba(139, 139, 139)
+    --cor-blue: #5ac9e5;
+    --cor-purple: #593293;
+    --cor-gray: #b1aebf;
 }
 .container{
   padding-left: 100px;
@@ -399,7 +399,7 @@ p{
 .btn {
   width: max-content;
   padding: 15px 40px;
-  background: linear-gradient(20deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 4%, rgba(0,212,255,1) 69%);
+  background: linear-gradient(20deg, rgba(2,0,36,1) 0%, #5c69b1 4%, #5dcae5 69%);
   font-size: 1.3rem;
   font-weight: 500;
   color: white;
@@ -468,9 +468,12 @@ p{
 
 #block-3 .text button{
   font-size: 1.8rem;
-  color: rgba(11, 11, 185, 0.795);
+  color: #4772b8;
   font-weight: 700;
   cursor: pointer;
+  display: flex;
+  align-items: center; 
+  gap: 10px;
 }
 #block-3 .text button span{
   font-size: 1.4rem;
@@ -495,6 +498,7 @@ p{
 #block-4 .content p{
   font-size: 2rem;
   font-weight: 400;
+  margin-bottom: 100px;
 }
 
 #block-4 .content p .relative a{
@@ -513,4 +517,107 @@ p{
   right: 0;
   width: 45%;
   top: -500px;
+}
+#block-4 .content a:last-child{
+  font-size: 1.8rem;
+  color: #4772b8;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center; 
+  gap: 10px;
+}
+#block-4 .content a:last-child span{
+  font-size: 1.4rem;
+}
+
+#block-5{
+  height: 1000px;
+}
+
+#block-5 img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+
+#block-5 .content{
+  position: absolute;
+  right: 10%;
+  top: 30%;
+}
+
+#block-5 .content .linha-reta{
+  background: linear-gradient(to right, #e2deef 30%, #fff 0);
+}
+
+#block-5 .content h1{
+  font-size: 2.5rem;
+  color: var(--cor-purple);
+  font-weight: 700;
+  max-width: 700px;
+  margin: 50px 0 ;
+}
+
+#block-5 .content p span{
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #fff;
+}
+#block-5 .content .download{
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+#block-5 .content .download a{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 20px;
+  background-color: black;
+  border-radius: 10px;
+}
+#block-5 .content .download a .android{
+  rotate: 45deg;
+  height: 50px;
+  width: 60px;
+  margin-top:-20px;
+}
+#block-5 .content .download a .ios{
+  height: 50px;
+  width: 50px;
+}
+
+#block-6 .content{
+  display: flex;
+  gap: 150px;
+  justify-content: center;
+}
+
+#block-6 .content .flex{
+  gap: 150px;
+  align-items: center;
+}
+#block-6 .content .flex img{
+  height: 100%
+}
+
+#block-6 .content .flex p{
+    font-size: 2.8rem;
+    color: var(--cor-purple);
+    max-width: 700px;
+    max-width: 350px;
+}
+#block-6 .content .linha-reta{
+  margin-top: 50px;
+}
+
+footer{
+  background-image: url(../images/img-fundo-teste-programador.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
