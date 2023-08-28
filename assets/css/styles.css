@@ -335,6 +335,9 @@ video {
     --cor-purple: #593293;
     --cor-gray: #b1aebf;
 }
+.mobile{
+  display: none;
+}
 .container{
   padding-left: 200px;
   padding-right: 200px;
@@ -354,7 +357,7 @@ header .menu-desk a{
   font-weight: 500;
   transition: all 200ms ease-in-out;
 }
-header .menu-desk a:hover{
+header  a:hover{
   color: var(--cor-purple);
 }
 header .menu-desk img{
@@ -655,7 +658,8 @@ p{
 }
 
 footer.container{
-  background: #593293;
+  background-image: url(../images/fundo-footer-teste-programador.png.jpg);
+  background-size: 100% 100%;
   padding: 0 250px ;
 }
 footer .container-footer{
@@ -666,9 +670,9 @@ footer .container-footer{
 footer .container-footer .col-1{
   width: 50%;
 }
-footer .container-footer .col-1 img:first-child{
+footer .container-footer .col-1 > img{
   width: 200px;
-  margin: 0 0 30px;
+  margin: -10px 0 29px;
 }
 
 footer .container-footer .flex{
@@ -717,17 +721,9 @@ footer .icons{
   gap: 20px;
 }
 
-@media (max-width:450px){}
 
-@media (max-width:650px){}
 
-@media (max-width:768px){}
-
-@media (max-width:1024px){}
-
-@media (min-width:1024px) and (max-width:1280px){}
-
-@media (min-width:1366px) and (max-width:1536px){
+@media (max-width:1536px){
   .container {
     padding-left: 100px;
     padding-right: 100px;
@@ -758,7 +754,10 @@ p {
 #block-2 .grid {
   gap: 50px;
 }
-
+#block-3 .content {
+  width: 50%;
+  padding-right: 0px;
+}
 #block-3 img {
   min-width: 0px;
   max-width: 40%;
@@ -769,6 +768,7 @@ p {
 #block-3 .content .linha-reta {
   margin: 40px 0;
 }
+
 #block-4 img {
   width: 40%;
   top: -250px;
@@ -782,7 +782,7 @@ p {
   margin: 50px 0 100px;
 }
 #block-4 .content p {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   margin-bottom: 50px;
 }
 #block-4 .content p .relative .linha-reta {
@@ -793,10 +793,14 @@ p {
   font-size: 1.3rem;
 }
 
+#block-5 {
+  height: 667px;
+}
+
 #block-5 .content {
   position: absolute;
-  right: 5%;
-  top: 20%;
+  right: 150px;
+  top: 30%;
 }
 
 #block-5 .content h1 {
@@ -805,6 +809,10 @@ p {
 }
 #block-5 .content .download {
   gap: 20px;
+}
+#block-6{
+ padding-left: 150px;
+ padding-right: 150px;
 }
 
 #block-6 .content {
@@ -829,6 +837,383 @@ footer .container-footer .col-1 {
 }
 footer .container-footer .flex {
   width: 55%;
+}
+}
+@media (max-width:1281px){
+  .container {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+#block-1 {
+  margin-left: 50px;
+}
+#block-1 .content {
+  gap: 25px;
+}
+#block-1 .content h1 {
+  font-size: 3rem;
+}
+#block-1 .content p {
+  font-size: 1.05rem;
+}
+
+
+  #block-2.container {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+  #block-4 .content p {
+    font-size: 1.7rem;
+}
+
+#block-4 .content h1 {
+  margin: 25px 0 50px;
+}
+
+#block-4 .content p .relative .linha-reta {
+  width: 53px;
+  top: 33px;
+}#block-4 .content h1 {
+    margin: 25px 0 50px;
+}
+#block-2 h2 {
+  font-size: 1.4rem;
+}
+
+#block-4 .content {
+  margin-top: 50px;
+  padding: 0 0 0 50px;
+}
+
+#block-5 .content {
+  position: absolute;
+  right: 50px;
+  top: 24%;
+}
+#block-6 {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+footer.container {
+  padding: 0 50px;
+}
+}
+@media (max-width:1025px){
+  header {
+    padding: 0;
+   
+}
+ .desk{
+  display: none;
+ }
+ .mobile{
+  display: block;
+  width: 100%;
+  position: relative;
+ }
+ .mobile .flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+ }
+ .mobile .menu{
+  background-color: white;
+  top: -100vh;
+  height: 100vh;
+  width: 100vw;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  padding: 50px 0;
+  position: absolute;
+  transition: all 500ms ease-in-out;
+ }
+ .mobile .menu.active{
+  top: 0;
+ }
+ .mobile .menu .login img {
+  width: 20px;
+}
+.mobile .menu .login > a {
+  display: flex;
+  gap: 10px;
+} 
+header .login .register {
+  border-radius: 10px;
+}
+ .close{
+  position: absolute;
+  top: 20px;
+  right: 40px;
+ }
+ .mobile .flex img{
+  width: 100px;
+ }
+
+  #block-1 .content {
+    gap: 15px;
+}
+
+#block-1 .content h1 {
+  font-size: 2rem;
+  max-width: 70%;
+}
+  #block-2 img {
+    width: 60%;
+    margin: 0 auto;
+}
+#block-2 .text {
+  max-width: 30%;
+  margin: 0 auto;
+}
+#block-3 .flex {
+ justify-content: space-between;
+ padding-right: 50px;
+}
+#block-3 .text p {
+  font-size: 0.9rem;
+}
+#block-3 .text p:nth-child(2) {
+  margin: 20px 0 40px 0;
+}
+#block-3 .text button {
+  font-size: 1.4rem;
+}
+#block-4 .content {
+  margin-top: 40px;
+}
+#block-4 .content h1 {
+  margin: 20px 0 30px;
+  font-size: 2.0rem;
+  max-width: 295px;
+}
+
+#block-4 .content p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+}
+#block-4 .content p .relative .linha-reta {
+  width: 38px;
+  top: 24px;
+}
+#block-4 img {
+  top: -120px;
+}
+#block-5 {
+  height: 550px;
+}
+#block-5 .content {
+  position: absolute;
+  right: 50px;
+  top: 20%;
+}
+
+
+#block-5 .content h1 {
+  font-size: 1.45rem;
+  max-width: 400px;
+  margin: 20px 0;
+}
+
+#block-5 .content p span {
+  font-size: 1rem;
+}
+#block-5 .content .download a .android {
+  rotate: 45deg;
+ height: auto;
+  width: 45px;
+  margin-top: -10px;
+}
+#block-6 .content .flex p {
+  font-size: 1.4rem;
+}
+#block-6 .content .flex img {
+  height: 72px;
+}
+#block-6 .content .flex {
+  gap: 50px;
+}
+}
+@media (max-width:450px){
+  section {
+    padding: 20px 0;
+}
+.linha-reta {
+  width: 100px;
+  height: 10px;
+}
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+  #block-1 {
+    margin-left: 10px;
+}
+  #block-1 .content {
+    max-width: 50%;
+    padding-left: 0;
+}
+
+.btn {
+  padding: 9px 24px;
+  font-size: 1.1rem;
+}
+  #block-1 .content h1 {
+    font-size: 1.6rem;
+    max-width: 80%;
+}
+#block-1 .content p {
+  font-size: 0.8rem;
+}
+#block-2 h1 {
+  font-size: 1.4rem;
+  margin-top: 50px;
+}
+#block-2 img {
+  width: 100%;
+}
+#block-2 .text {
+  max-width: 80%;
+  gap: 10px;
+}
+#block-3 .flex {
+  padding-right: 10px;
+}
+#block-3 .text p {
+  font-size: 0.8rem;
+}
+#block-3 .content .linha-reta {
+  margin: 15px 0;
+}
+#block-3 .text p:nth-child(2) {
+  margin: 10px 0 15px 0;
+}
+#block-3 .text button {
+  font-size: 1rem;
+}
+#block-4 img {
+  top: -55px;
+}
+#block-4 .content {
+  margin-top: 30px;
+  padding: 0 0 0 10px;
+}
+#block-4 .content h1 {
+  margin: 10px 0 15px;
+  font-size: 1.3rem;
+  max-width: 170px;
+}
+#block-4 .content p {
+  font-size: 0.7rem;
+}
+#block-4 .content p .relative .linha-reta {
+  width: 23px;
+  top: 15px;
+  height: 2px;
+}
+#block-4 .content a:last-child {
+  font-size: 1rem;
+}
+#block-4 .content a:last-child span {
+  font-size: 1rem;
+}
+#block-5 {
+  height: 200px;
+}
+#block-5 .content {
+  position: absolute;
+  right: 10px;
+  top: 20%;
+}
+#block-5 .content h1 {
+  font-size: 0.7rem;
+  max-width: 196px;
+  margin: 5px 0px;
+}
+#block-5 .content .download {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+#block-5 .content .download a {
+  gap: 0px;
+  padding: 3px 7px;
+}
+#block-5 .content .download a .android {
+  width: 20px;
+}
+#block-5 .content .download a .ios {
+  height: auto;
+  width: 20px;
+}
+#block-5 .content .download p {
+  font-size: 0.6rem;
+}
+#block-5 .content .download p span {
+  font-size: 0.7rem;
+}
+#block-6 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#block-6 .content {
+  gap: 20px;
+}
+#block-6 .content .flex {
+  gap: 20px;
+}
+#block-6 .content .flex p {
+  font-size: 0.8rem;
+}
+#block-6 .content .flex img {
+  height: 38.38px;
+}
+footer .container-footer {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px solid var(--cor-gray);
+  padding: 100px 0;
+}
+footer.container {
+  padding: 0 10px;
+}
+footer .container-footer {
+  padding: 50px 0;
+}
+footer .container-footer .col-1 {
+  width: 62%;
+}
+footer .container-footer .col-1 > img {
+  width: 200px;
+  margin: 0 0 10px;
+}
+footer .container-footer .col-1 .flex-icon p {
+ font-size: 0.8rem;
+}
+footer .container-footer .col-1 .flex-icon img {
+  width: 20px;
+}
+footer .container-footer .flex {
+  width: 100%;
+  gap: 20px;
+}
+footer .container-footer .flex p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+footer .container-footer .flex li {
+  font-size: 0.8rem;
+}
+footer .icons {
+  gap: 10px;
+}
+p {
+  font-size: 0.8rem;
 }
 }
 
