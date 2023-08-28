@@ -338,6 +338,11 @@ video {
 .mobile{
   display: none;
 }
+.desk{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
 .container{
   padding-left: 200px;
   padding-right: 200px;
