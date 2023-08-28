@@ -336,13 +336,52 @@ video {
     --cor-gray: #b1aebf;
 }
 .container{
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 200px;
+  padding-right: 200px;
 
 }
 header{
   padding: 30px 0;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  color: var(--cor-gray);
 }
+header .menu-desk{
+  gap: 50px;
+  align-items: center;
+}
+header .menu-desk a{
+  font-weight: 500;
+  transition: all 200ms ease-in-out;
+}
+header .menu-desk a:hover{
+  color: var(--cor-purple);
+}
+header .menu-desk img{
+  margin-top: -10px;
+}
+header .login{
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+header .login .flex{
+  gap: 10px;
+  
+}
+
+header .login .flex p{
+  color: var(--cor-purple);
+}
+
+header .login .register{
+  color:#4772b8;
+  border: 1px solid var(--cor-gray);
+  padding: 10px 20px;
+  border-radius: 10px;
+  line-height: 1;
+}
+
 main{
   max-width: 100vw;
   overflow: hidden;
@@ -376,7 +415,7 @@ section{
 }
 #block-1 .content{
   max-width: 30%;
-  padding-right: 104px;
+  padding-left: 100px;
   margin-top: 50px;
   display: flex;
   flex-direction: column;
@@ -594,12 +633,12 @@ p{
 
 #block-6 .content{
   display: flex;
-  gap: 150px;
+  gap: 204px;
   justify-content: center;
 }
 
 #block-6 .content .flex{
-  gap: 150px;
+  gap: 170px;
   align-items: center;
 }
 #block-6 .content .flex img{
@@ -609,15 +648,190 @@ p{
 #block-6 .content .flex p{
     font-size: 2.8rem;
     color: var(--cor-purple);
-    max-width: 700px;
     max-width: 350px;
 }
 #block-6 .content .linha-reta{
   margin-top: 50px;
 }
 
-footer{
-  background-image: url(../images/img-fundo-teste-programador.png);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+footer.container{
+  background: #593293;
+  padding: 0 250px ;
 }
+footer .container-footer{
+  display: flex;
+  border-bottom: 2px solid var(--cor-gray) ;
+  padding: 100px 0;
+}
+footer .container-footer .col-1{
+  width: 50%;
+}
+footer .container-footer .col-1 img:first-child{
+  width: 200px;
+  margin: 0 0 30px;
+}
+
+footer .container-footer .flex{
+  width: 50%;
+  justify-content: space-between;
+}
+footer .container-footer .col-1 .flex-icon{
+  display: flex;
+  gap: 10px;
+}
+
+footer .container-footer .col-1 .flex-icon p{
+  transition: all 200ms ease-in-out; 
+  cursor: pointer;
+}
+footer .container-footer .col-1 .flex-icon p:hover{
+  color: #fff;
+}
+
+footer .container-footer .col-1 .flex-icon img{
+  width: 30px;
+}
+footer .container-footer .flex p {
+  font-size: 1.8rem;
+  color: #fff;
+  margin-bottom: 30px;
+}
+footer .container-footer .flex li{
+  font-size: 1.3rem;
+  color: var(--cor-gray);
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+}
+footer .container-footer .flex li:hover{
+  color:#fff;
+}
+
+footer .footer{
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .icons{
+  display: flex;
+  gap: 20px;
+}
+
+@media (max-width:450px){}
+
+@media (max-width:650px){}
+
+@media (max-width:768px){}
+
+@media (max-width:1024px){}
+
+@media (min-width:1024px) and (max-width:1280px){}
+
+@media (min-width:1366px) and (max-width:1536px){
+  .container {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+p {
+  font-size: 1rem;
+}
+
+#block-1 .content h1 {
+  font-size: 3.5rem;
+  max-width: 70%;
+}
+#block-1 .content {
+  max-width: 37%;
+  padding-left: 0;
+}
+#block-1 .content p{
+  font-size: 1rem;
+}
+#block-1 img {
+  width: 55%;
+}
+#block-2.container {
+  padding-left: 150px;
+  padding-right: 150px;
+}
+#block-2 .grid {
+  gap: 50px;
+}
+
+#block-3 img {
+  min-width: 0px;
+  max-width: 40%;
+}
+#block-3 .text p {
+  font-size: 1.3rem;
+}
+#block-3 .content .linha-reta {
+  margin: 40px 0;
+}
+#block-4 img {
+  width: 40%;
+  top: -250px;
+}
+#block-4 .content {
+    margin-top: 160px;
+    width: 70%;
+    padding: 0 0 0  150px;
+}
+#block-4 .content h1 {
+  margin: 50px 0 100px;
+}
+#block-4 .content p {
+  font-size: 1.4rem;
+  margin-bottom: 50px;
+}
+#block-4 .content p .relative .linha-reta {
+  width: 45px;
+  top: 29px;
+}
+#block-4 .content a:last-child {
+  font-size: 1.3rem;
+}
+
+#block-5 .content {
+  position: absolute;
+  right: 5%;
+  top: 20%;
+}
+
+#block-5 .content h1 {
+  font-size: 2.0rem;
+  max-width: 550px;
+}
+#block-5 .content .download {
+  gap: 20px;
+}
+
+#block-6 .content {
+  gap: 100px;
+}
+#block-6 .content .flex {
+  gap: 97px;
+}
+
+
+#block-6 .content .flex p {
+  font-size: 2.2rem;
+  max-width: 300px;
+}
+
+footer.container {
+  padding: 0 150px;
+}
+
+footer .container-footer .col-1 {
+  width: 45%;
+}
+footer .container-footer .flex {
+  width: 55%;
+}
+}
+
+
+
+
